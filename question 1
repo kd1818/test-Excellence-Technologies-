@@ -1,0 +1,13 @@
+response = requests.get(url, headers=headers)
+
+obj_json = response.content
+objLoader = json.loads(obj_json)
+obj1 = objLoader
+
+
+response = requests.get(url, headers=headers)
+
+obj_json = response.content
+obj1 = json.loads(obj_json)
+
+newObj = dict(obj1.items() + obj2.items())
